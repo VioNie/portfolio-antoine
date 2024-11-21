@@ -1,0 +1,17 @@
+{
+    "name": "mey/antoine-portfolio",
+    "autoload": {
+        "psr-4": {
+            "Mey\\AntoinePortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mey",
+            "email": "meydetour@gmail.com"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    }
+}
