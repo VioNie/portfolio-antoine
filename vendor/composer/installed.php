@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'mey/antoine-portfolio',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '178dbf1e465052fdb36740ce04f8aed349f2cd9f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'mey/antoine-portfolio' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '178dbf1e465052fdb36740ce04f8aed349f2cd9f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

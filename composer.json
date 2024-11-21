@@ -2,7 +2,8 @@
     "name": "mey/antoine-portfolio",
     "autoload": {
         "psr-4": {
-            "Mey\\AntoinePortfolio\\": "src/"
+            "App\\": "src/",
+            "Core\\": "core/"
         }
     },
     "authors": [
