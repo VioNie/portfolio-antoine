@@ -1,6 +1,17 @@
+/*  Z INDEX */
+/*  5 : links */
+/*  3 : elipses */
+:root {
+    --bienvenu-text-time : 4s;
+    --bienvenu-text-time-latence : 0.5s;
+    --columns-animation : 5s;
+    --link-text-appear : 6.5s;
+    --text-appear-time : 8s;
+}
+
 .section1 {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -11,6 +22,72 @@
 
 }
 
+.bienvenue {
+    text-align: center;
+    width: fit-content;
+    clip-path: border-box;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    opacity: 0;
+    transform: translateY(-50%);
+    -webkit-animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
+    -o-animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
+    animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
+}
+
+@keyframes bienvenue {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    40% {
+        width:33%;
+    }
+    70% {
+
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/*=======================  TITLES ANIMATIONS     ==============*/
+
+.section1  .titles {
+
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    clip-path: border-box;
+
+    position: absolute;
+    top: 38%;
+
+    -webkit-animation: titles var(--text-appear-time) linear;
+    -o-animation: titles var(--text-appear-time) linear;
+    animation: titles var(--text-appear-time) linear;
+}
+
+
+@keyframes titles {
+    0% {
+        height: 0%;
+    }
+
+    90% {
+        height: 0%;
+    }
+    100% {
+        height: 30%;
+    }
+}
+
 /*=======================  COLUMNS IN BACKGROUND     ==============*/
 
 .section1 .columns {
@@ -18,8 +95,8 @@
     z-index: -1;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0%;
+    transform: translateX(-50%);
 
     width: 100%;
     height: 100%;
@@ -30,18 +107,81 @@
 
     clip-path: border-box;
 
-    filter: drop-shadow(-4px 0px 32px rgba(0, 0, 0, 0.025)) drop-shadow(4px 0px 32px rgba(0, 0, 0, 0.02));
+    filter: drop-shadow(-4px 0px 32px rgba(0, 0, 0, 0.025)) drop-shadow(4px 0px 32px rgba(0, 0, 0, 0.040));
+
+    -webkit-animation: columns var(--columns-animation) linear;
+    -o-animation: columns var(--columns-animation) linear;
+    animation: columns var(--columns-animation) linear;
 }
 
 .section1 .columns .column {
     height: 100%;
     width: 15%;
+
     background: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+
+    padding-block: 40px;
+    box-sizing: border-box;
+
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.section1 .columns .column .link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+
+    z-index: 5;
+
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
+}
+
+.section1 .columns .column .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: start;
+
+    z-index: 5;
+
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
+}
+
+.section1 .columns .column .mailAndLinkedin {
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    align-self: start;
+
+    gap: 24px;
+
+    z-index: 5;
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
+}
+
+.section1 .columns .column .mailAndLinkedin div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .section1 .columns .whiteBlur1, .section1 .columns .whiteBlur2 {
     width: 150%;
-    height: 20%;
+    height: 27%;
 
     background: var(--white);
 
@@ -49,6 +189,7 @@
 
     position: absolute;
     left: 0;
+    z-index: 3;
 
     filter: blur(50px);
 }
@@ -63,6 +204,29 @@
     transform: translateY(50%) translateX(-25%);
 }
 
+@keyframes columns {
+    0% {
+        height: 0%;
+    }
+    70% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes linkOpacity {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 
 /*=======================  ELPISES IN BACKGROUND     ==============*/
 .section1 .elipse1 {
@@ -75,8 +239,8 @@
 
     position: absolute;
     left: -5%;
-    top: 50%;
-    transform: translateX(-50%)translateY(-50%);
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%);
 
 }
 
@@ -111,7 +275,7 @@
     position: absolute;
     right: -37%;
     top: 50%;
-    transform: translateX(-50%)translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 
 }
 
@@ -125,7 +289,7 @@
 
     position: absolute;
     left: -15%;
-    top: 50%;
-    transform: translateX(-50%)translateY(-50%);
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%);
 
 }

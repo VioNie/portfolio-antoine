@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @font-face {
-    font-family: "camptonLight";
-    src: url("../campton/CamptonLight.otf") format("opentype");
+    font-family: "camptonBook";
+    src: url("../campton/CamptonBook.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +14,7 @@
 body {
 overflow-x: hidden;
 
-    font-family: "camptonLight", "Nunito", sans-serif;
+    font-family: "camptonBook", "Nunito", sans-serif;
 
     background: var(--white);
 
@@ -45,5 +45,27 @@ h2 {
     font-size: 78px;
 
     margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*=======================    NAVBAR     ==============*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
 
 }
