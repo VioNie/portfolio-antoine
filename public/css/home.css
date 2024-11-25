@@ -2,14 +2,17 @@
 /*  5 : links */
 /*  3 : elipses */
 :root {
-    --bienvenu-text-time : 4s;
-    --bienvenu-text-time-latence : 0.5s;
-    --columns-animation : 5s;
-    --link-text-appear : 6.5s;
-    --text-appear-time : 8s;
+    --bienvenu-text-time: 3.5s;
+    --bienvenu-text-time-latence: 0.5s;
+    --columns-animation: 5s;
+    --link-text-appear: 5.5s;
+    --text-appear-time: 7.3s;
+    --speed-of-animation-span: 0.4s;
 }
 
 .section1 {
+    z-index: -2;
+
     width: 100%;
     height: 100vh;
 
@@ -42,7 +45,7 @@
         opacity: 1;
     }
     40% {
-        width:33%;
+        width: 33%;
     }
     70% {
 
@@ -56,7 +59,7 @@
 
 /*=======================  TITLES ANIMATIONS     ==============*/
 
-.section1  .titles {
+.section1 .titles {
 
     height: fit-content;
 
@@ -128,7 +131,7 @@
     padding-block: 40px;
     box-sizing: border-box;
 
-    font-size: 21px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -137,6 +140,7 @@
     flex-direction: column;
     align-items: start;
 
+    cursor: pointer;
 
     z-index: 5;
 
@@ -144,6 +148,23 @@
     -o-animation: linkOpacity var(--link-text-appear) linear;
     animation: linkOpacity var(--link-text-appear) linear;
 }
+
+.section1 .columns .column .animatedSpan {
+    clip-path: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 16px;
+    cursor: pointer;
+}
+
+.section1 .columns .column .animatedSpan span{
+    display: flex;
+    transform: translateY(-19px);
+    transition: transform var(--speed-of-animation-span) linear;
+    /* 0- (-38)*/
+
+}
+
 
 .section1 .columns .column .logo {
     display: flex;
@@ -166,6 +187,7 @@
     align-self: start;
 
     gap: 24px;
+cursor: pointer;
 
     z-index: 5;
     -webkit-animation: linkOpacity var(--link-text-appear) linear;
