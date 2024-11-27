@@ -1,16 +1,17 @@
 <div class="section2">
+    <div class="elipse"></div>
     <h2>A propos</h2>
     <div class="line">
         <div>
-            <div class="bloc">
-                <h3>Présentation</h3>
+            <div class="bloc5">
+                <h4>Présentation</h4>
                 <p>Hello, moi c’est Antoine, j’ai 20 ans et je viens de Lyon. Je suis un passionné de web design depuis
                     le
                     début de mes études. Je prends une grande attention à tout ce qui entoure ce domaine afin de rester
                     à
                     l’affut !</p>
             </div>
-            <div class="bloc">
+            <div class="bloc3">
                 <svg width="44" height="59" viewBox="0 0 44 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.9141 29.4998C21.9141 24.0691 26.8198 19.6665 32.8715 19.6665C38.923 19.6665 43.8289 24.0691 43.8289 29.4998C43.8289 34.9307 38.923 39.3332 32.8715 39.3332C26.8198 39.3332 21.9141 34.9307 21.9141 29.4998Z"
                           fill="#A172F9"/>
@@ -26,7 +27,7 @@
                 <p>UI - Figma</p>
 
             </div>
-            <div class="bloc">
+            <div class="bloc4">
                 <svg width="67" height="58" viewBox="0 0 67 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M42.2804 0H66.8758V58L42.2804 0ZM24.9378 0H0.3125V58L24.9378 0ZM33.6027 21.3704L49.2851 58H39.007L34.313 46.3315H22.8369L33.6027 21.3704Z"
@@ -40,23 +41,26 @@
         <img src="/images/antoineclaitte.png" alt="Antoine Claitte image">
 
         <div>
-            <div class="bloc"></div>
-            <div class="bloc"></div>
-            <div class="bloc">
+            <div class="bloc1">
                 <p class="underlined">Esprit d'équipe</p>
                 <p class="underlined">Adaptation</p>
                 <p class="underlined">A l'écoute</p>
                 <p class="underlined">Réactif</p>
             </div>
-            <div class="bloc">
+            <div class="bloc2">
                 <p>À la fois étudiant et freelance, j’alterne entre alternance et entrepreneuriat afin de développer mes
                     compétences au sein d’un domaine qui m’anime !</p>
             </div>
         </div>
     </div>
 
-    <a href="">Télécharger mon CV <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.65625 12.6264L12.6258 1.65682M12.6258 1.65682L12.625 12.4998M12.6258 1.65682H1.31211" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <a href="" class="downloadCv">    <span> Télécharger mon CV </span>  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.65625 12.6264L12.6258 1.65682M12.6258 1.65682L12.625 12.4998M12.6258 1.65682H1.31211" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </a>
 </div>
+
+
+<script>
+
+</script>

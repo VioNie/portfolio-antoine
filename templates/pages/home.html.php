@@ -27,16 +27,16 @@
         <div class="column"></div>
         <div class="column"></div>
         <div class="column">
-            <div class="link"><span>[01]</span>
+            <div class="link"  onclick="scrollToDiv('.section2')"><span>[01]</span>
                 <div class="animatedSpan">
-                    <span>A propos 1</span>
-                    <span>A propos 2</span>
-                    <span>A propos 3</span>
+                    <span>A propos</span>
+                    <span>A propos</span>
+                    <span>A propos</span>
                 </div>
             </div>
         </div>
         <div class="column">
-            <div class="link"><span>[02]</span>
+            <div class="link" onclick="scrollToDiv('.section4')"><span>[02]</span>
                 <div class="animatedSpan">
                     <span>Projets</span>
                     <span>Projets</span>
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="column">
+        <div class="column" onclick="scrollToDiv('.footer')>
             <div class="link"><span>[03]</span>
                 <div class="animatedSpan">
                     <span>Contact</span>
@@ -71,52 +71,6 @@
 </div>
 
 <script>
-
-    let links = document.querySelectorAll('.animatedSpan')
-    links.forEach((link) => {
-        let isAnimating = false;
-        console.log(link)
-        link.addEventListener('mouseover', function (e) {
-
-            if (isAnimating) return; // Si une animation est en cours, ignorer l'événement
-            isAnimating = true;
-            // Get the target
-            console.log(link)
-            const target = e.target;
-
-
-            // Get the bounding rectangle of target
-            const rect = target.getBoundingClientRect();
-
-            const y = e.clientY - rect.top;
-
-            // Vérifier si l'entrée vient du haut ou du bas
-            if (y < rect.height / 2) {
-                console.log("Entier par le haut")
-
-                isAnimating = true;
-                link.querySelectorAll('span').forEach((span) => {
-                    span.style.transform = "translateY(-38px)"
-                })
-            } else {
-
-                isAnimating = true;
-                console.log("Entier par le bas")
-                link.querySelectorAll('span').forEach((span) => {
-                    span.style.transform = "translateY(0px)"
-                })
-            }
-
-
-        });
-
-        link.addEventListener('mouseout', function () {
-            link.querySelectorAll('span').forEach((span) => {
-                span.style.transform = "translateY(-19px)"; // Retour à l'état initial
-            });
-            isAnimating = false;
-        });
-    })
 
 </script>
 

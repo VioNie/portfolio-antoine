@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/webdesign.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    <link rel="stylesheet" href="css/projects.css">
     <title><?=$title?></title>
 
 </head>
 <body>
 <?=$content?>
-<script defer src="main.js"></script>
+<script defer src="main.js">
+</script>
 </body>
 </html>

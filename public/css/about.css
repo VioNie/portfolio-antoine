@@ -1,11 +1,14 @@
-.section2{
-    display: flex;
+.section2 {
+    display: none;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-bottom: 9%;
 }
 
-.section2 .line{
-    height: 75vh;
+.section2 .line {
+
+    height: 67vh;
 
     display: flex;
     flex-direction: row;
@@ -17,21 +20,77 @@
 
 }
 
-.section2 .line > img{
+.section2 .line > img {
 
     height: 100%;
     object-fit: contain;
 }
-.section2 .line >div{
+
+.section2 .line > div {
     width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
-.section2 .line .bloc{
-background: rgba(252, 249, 247, 0.33);
+
+.section2 .line [class^="bloc"] {
+    background: rgba(252, 249, 247, 0.70);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
+
+    width: 86%;
     height: fit-content;
+
+
+    border-radius: 18px;
+    padding: 7%;
+
+
+}
+
+.section2 .line .bloc1 {
+    padding-block: 62px;
+}.section2 .line .bloc1 p {
+   text-align: left;
+}
+
+.section2 .line .bloc1 p {
+    font-size: 24px;
+    position: relative;
+}
+
+.section2 .line .bloc1 p:after {
+    content: "";
+
+    position: absolute;
+    bottom: -8px;
+    left: 0%;
+
+    width: 100%;
+    background: #A172F9;
+    height: 2px;
+}
+
+.section2 .elipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    z-index: -1;
+
+    width: 490px;
+    height: 451px;
+    flex-shrink: 0;
+    border-radius: 490px;
+    background: rgba(86, 35, 252, 0.60);
+    filter: blur(350px);
+}
+.section2 .downloadCv{
+    border: 1px solid black;
+    padding: 21px 16px;
 }

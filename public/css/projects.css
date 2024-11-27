@@ -1,0 +1,16 @@
+.section4{
+    display: none;flex-direction: column;
+    align-items: center;
+    margin-bottom: 18%;
+
+}
+
+.section4 .imgContainer{
+    display: flex;flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+.section4 img{    border-radius: 10px;
+    width: 21%;
+}

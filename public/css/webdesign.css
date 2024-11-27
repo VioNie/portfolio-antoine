@@ -1,0 +1,66 @@
+.section3 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9%;
+}
+.section3 >p{
+    width: 29%;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.section3 [class^="line"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    gap: 80px;
+}
+
+.section3 .line1 [class^= "head"]
+{
+    height: fit-content;
+
+    display: flex ;
+    flex-direction: column ;
+    align-items: center;
+    background: #FCF9F7;
+
+    border-radius: 18px;
+    margin-bottom: 32px;
+    padding: 36px 98px;
+    position: relative;
+
+
+    width: 15%;
+
+}
+.section3 .line1 [class^= "head"] h4
+{
+    text-wrap: nowrap;
+}
+.section3 .line2 [class^= "bodyContent"]
+{
+text-align: center;
+    width: 25%;
+}
+
+
+
+.section3 .line1 .elipse{
+    border-radius: 387px;
+    background: rgba(86, 35, 252, 0.16);
+    filter: blur(100px);
+
+    flex-shrink: 0;
+    position: absolute;
+    z-index: -1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 86%;
+
+}
