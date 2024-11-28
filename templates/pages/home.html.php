@@ -1,5 +1,4 @@
 <div class="section1">
-    <?php require_once 'components/navbar.html.php' ?>
 
     <div class="columns">
         <div class="whiteBlur1"></div>
@@ -44,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="column" onclick="scrollToDiv('.footer')>
+        <div class="column" onclick="scrollToDiv('.footer')">
             <div class="link"><span>[03]</span>
                 <div class="animatedSpan">
                     <span>Contact</span>

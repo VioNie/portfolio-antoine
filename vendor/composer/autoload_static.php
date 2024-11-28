@@ -11,6 +11,10 @@ class ComposerStaticInit924f0657d96d273f1b122dbd321b671e
         array (
             'Core\\' => 5,
         ),
+        'B' => 
+        array (
+            'Bdd\\' => 4,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -21,6 +25,10 @@ class ComposerStaticInit924f0657d96d273f1b122dbd321b671e
         'Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
+        ),
+        'Bdd\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/bdd',
         ),
         'App\\' => 
         array (

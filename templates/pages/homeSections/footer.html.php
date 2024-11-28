@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="left">
-        <h1>Travaillons ensemble</h1>
+        <h2>Travaillons ensemble</h2>
         <div>
             <div class="data">
                 <span>[Lieu]</span>

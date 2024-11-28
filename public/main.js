@@ -7,27 +7,31 @@ document.addEventListener('DOMContentLoaded', () => {
     let section4 = document.querySelector(".section4")
     let footer = document.querySelector(".footer")
 
-    if (animation) {
-        window.addEventListener("beforeunload", () => {
-            section1.style.marginBottom = "0%"
-        });
+    if (section1 && section3 && section2 && section4 && footer){
+        if (animation ) {
+            window.addEventListener("beforeunload", () => {
+                section1.style.marginBottom = "0%"
+            });
 
 
-        setTimeout(() => {
+            setTimeout(() => {
+                section2.style.display = "flex"
+                section3.style.display = "flex"
+                footer.style.display = "flex"
+                section4.style.display = "flex"
+                section1.style.marginBottom = "11%"
+            }, 8000)
+
+        } else {
             section2.style.display = "flex"
             section3.style.display = "flex"
-            footer.style.display = "flex"
             section4.style.display = "flex"
-            section1.style.marginBottom = "22%"
-        }, 8000)
-
-    } else {
-        section2.style.display = "flex"
-        section3.style.display = "flex"
-        section4.style.display = "flex"
-        footer.style.display = "flex"
-        section1.style.marginBottom = "22%"
+            footer.style.display = "flex"
+            section1.style.marginBottom = "11%"
+        }
     }
+
+
 
 
 })
@@ -57,14 +61,14 @@ links.forEach((link) => {
 
             isAnimating = true;
             link.querySelectorAll('span').forEach((span) => {
-                span.style.transform = "translateY(-38px)"
+                span.style.transform = "translateY(-30px)"
             })
         } else {
 
             isAnimating = true;
             console.log("Entier par le bas")
             link.querySelectorAll('span').forEach((span) => {
-                span.style.transform = "translateY(0px)"
+                span.style.transform = "translateY(3px)"
             })
         }
 
@@ -73,7 +77,7 @@ links.forEach((link) => {
 
     link.addEventListener('mouseout', function () {
         link.querySelectorAll('span').forEach((span) => {
-            span.style.transform = "translateY(-19px)"; // Retour à l'état initial
+            span.style.transform = "translateY(-14px)"; // Retour à l'état initial
         });
         isAnimating = false;
     });
@@ -85,9 +89,14 @@ function scrollToDiv(route) {
     if (element) {
         element.scrollIntoView({
             behavior: 'smooth',
-            block: 'start'
+            block: 'center'
         });
 
     }
 }
 
+
+function navigateTo(link){
+
+    window.location.href = link;
+}

@@ -1,7 +1,7 @@
 <div class="section3">
     <h2>Webdesign</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum laborum magni officiis.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quibusdam.
+    Lorem ipsum dolor sit amet,
     </p>
     <div class="line1">
         <div class="head1">

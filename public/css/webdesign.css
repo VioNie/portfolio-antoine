@@ -2,12 +2,19 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 9%;
+    margin-bottom: 17%;
+}
+.section3 h2{
+
+    letter-spacing: -2px;
+
+    margin-bottom: -10px;
+
 }
 .section3 >p{
-    width: 29%;
+    width: 50%;
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 84px;
 }
 .section3 [class^="line"]{
     display: flex;
@@ -15,7 +22,10 @@
     justify-content: space-between;
     width: 100%;
 
-    gap: 80px;
+    gap: 76px;
+}
+.section3 .line1{
+    margin-bottom: 16px;
 }
 
 .section3 .line1 [class^= "head"]
@@ -25,14 +35,14 @@
     display: flex ;
     flex-direction: column ;
     align-items: center;
-    background: #FCF9F7;
+    background: rgba(252, 249, 247, 0.5);
 
     border-radius: 18px;
-    margin-bottom: 32px;
-    padding: 36px 98px;
+    padding: 28px 96px;
+
     position: relative;
 
-
+gap: 7px;
     width: 15%;
 
 }

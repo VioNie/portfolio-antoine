@@ -1,6 +1,6 @@
 <div class="section2">
     <div class="elipse"></div>
-    <h2>A propos</h2>
+    <h2>A PROPOS</h2>
     <div class="line">
         <div>
             <div class="bloc5">
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <a href="" class="downloadCv">    <span> Télécharger mon CV </span>  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a download href="antoine_claitte_CV.pdf" class="blackButton">    <span> Télécharger mon CV </span>  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
      <path d="M1.65625 12.6264L12.6258 1.65682M12.6258 1.65682L12.625 12.4998M12.6258 1.65682H1.31211" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </a>
